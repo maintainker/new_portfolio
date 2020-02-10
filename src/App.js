@@ -1,25 +1,28 @@
 import React from 'react';
 import './App.css';
 import './reset.css';
-import Cap_iron from './Cap_iron';
+import Capiron from './Cap_iron';
 import Personal from './Personal';
-import Portfolio from './portfolio';
+import Skill from './Skill';
 import ScrollDirect from './scroll';
+import Portfolio from './PortFolio';
 const App =()=> {
   return (
     <div className="App">
       <ScrollDirect />
       <header className='container'>
-          <Cap_iron />
+          <Capiron />
       </header>
       <section>
           <Personal />
       </section>
-      <section id='portfolio'>
-          <Portfolio />
+      <section id='Skill'>
+        <Skill />
       </section>
-      <section id='skill'></section>
-      <section id='portfolio'></section>
+      <section id='portfolio'>
+        <Portfolio />
+      </section>
+      <footer></footer>
     </div>
   );
 }

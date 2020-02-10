@@ -11,7 +11,7 @@ import panther_img from'./img/블랙펜서.png';
 import winter_img from'./img/윈터솔저.png';
 import hawk_img from'./img/호크아이.png';
 
-const Cap_iron = () =>{
+const Capiron = () =>{
     return(
     <div id="header">
         <img className='panther' src={panther_img} alt='black_Panther'></img>
@@ -31,4 +31,4 @@ const Cap_iron = () =>{
     </div>);
 }
 
-export default Cap_iron;
+export default Capiron;
