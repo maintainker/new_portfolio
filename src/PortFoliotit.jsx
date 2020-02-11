@@ -1,48 +1,47 @@
 import React, { useState} from 'react';
 
 const PortTit = (y_dir)=>{
-    let titpo_X=55+ 10*y_dir.children;
-    const [titpo_Y,setTitpoY] = useState(38);
+    const [titpo,setTitPo]=useState({titpo_X:55+ 10*y_dir.children,titpo_Y:38});
     const [tit_disp,setTitDisp] = useState('none');
     let onoff = 1;
     
-    let y;
+    let y,x;
     let timer;
     document.addEventListener("scroll", function(e){ 
         if (!timer) {
             timer = setTimeout(function() {
             timer = null;
-            y= 38-window.pageYOffset/20+165;
+            y= 38-window.pageYOffset/30+110;
+            x=55+10*y_dir.children-window.pageYOffset/7+471.4;
+
             if(window.pageYOffset>3300){
+
                 if(onoff === 1){
-                    titpo_X-=window.pageYOffset/10;
-                    setTitpoY(y); 
+                    setTitPo({titpo_X:x,titpo_Y:y}); 
                     setTitDisp('block');
                     
-                console.log('이프 이전 :',onoff);
             }
                 
                 onoff = 2;
-                console.log('이프 이후 :',onoff);
             }else{
                 if(onoff===2){
-                    titpo_X=55+ 10*y_dir.children;
+                    setTitPo({titpo_X:55+ 10*y_dir.children,titpo_Y:38}); 
                     setTitDisp('none');
                 }
                 onoff = 1;
             }
             
-            }, 10);
+            }, 14);
         }
     });
     let port_tit = {
-        left:titpo_X+'%',
-        top:titpo_Y+'%',
+        left:titpo.titpo_X+'%',
+        top:titpo.titpo_Y+'%',
         display:tit_disp
     }
     let port_tit2 = {
-        left:titpo_X+'%',
-        bottom:titpo_Y+'%',
+        left:titpo.titpo_X+'%',
+        bottom:titpo.titpo_Y+'%',
         display:tit_disp
     }
     let port_titl;
