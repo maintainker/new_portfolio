@@ -38,8 +38,6 @@ const Portfolio=()=>{
     };
         return (
     <div className='port' style={port_style}>
-        {/* <span style = {port_tit}>Portfolio</span>
-        <span style = {port_tit2}>Portfolio</span> */}
         <PortTit y_dir={y_dir}>0</PortTit>
         <PortTit y_dir={y_dir}>1</PortTit>
     </div>);    

@@ -1,8 +1,9 @@
 import React, { useState} from 'react';
 
 const PortTit = (y_dir)=>{
-    const [titpo,setTitPo]=useState({titpo_X:55+ 10*y_dir.children,titpo_Y:38});
-    const [tit_disp,setTitDisp] = useState('none');
+    const [tit_po_y,set_tit_po_y]=useState(38);
+    const [tit_disp,set_tit_disp] = useState('none');
+    let tit_po_X= 55+ 10*y_dir.children;
     let onoff = 1;
     
     let y,x;
@@ -17,16 +18,18 @@ const PortTit = (y_dir)=>{
             if(window.pageYOffset>3300){
 
                 if(onoff === 1){
-                    setTitPo({titpo_X:x,titpo_Y:y}); 
-                    setTitDisp('block');
+                    tit_po_X = x;
+                    set_tit_po_y(y); 
+                    set_tit_disp('block');
                     
             }
                 
                 onoff = 2;
             }else{
                 if(onoff===2){
-                    setTitPo({titpo_X:55+ 10*y_dir.children,titpo_Y:38}); 
-                    setTitDisp('none');
+                    let tit_po_X= 55+ 10*y_dir.children;
+                    set_tit_po_y({titpo_X:55+ 10*y_dir.children,titpo_Y:38}); 
+                    set_tit_disp('none');
                 }
                 onoff = 1;
             }
@@ -35,13 +38,13 @@ const PortTit = (y_dir)=>{
         }
     });
     let port_tit = {
-        left:titpo.titpo_X+'%',
-        top:titpo.titpo_Y+'%',
+        left:tit_po_X+'%',
+        top:tit_po_y+'%',
         display:tit_disp
     }
     let port_tit2 = {
-        left:titpo.titpo_X+'%',
-        bottom:titpo.titpo_Y+'%',
+        left:tit_po_X+'%',
+        bottom:tit_po_y+'%',
         display:tit_disp
     }
     let port_titl;
