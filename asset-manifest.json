@@ -1,26 +1,29 @@
 {
   "files": {
     "main.css": "/new_portfolio/static/css/main.6e0e62f1.chunk.css",
-    "main.js": "/new_portfolio/static/js/main.883953f7.chunk.js",
-    "main.js.map": "/new_portfolio/static/js/main.883953f7.chunk.js.map",
+    "main.js": "/new_portfolio/static/js/main.b51c5333.chunk.js",
+    "main.js.map": "/new_portfolio/static/js/main.b51c5333.chunk.js.map",
     "runtime-main.js": "/new_portfolio/static/js/runtime-main.a70873af.js",
     "runtime-main.js.map": "/new_portfolio/static/js/runtime-main.a70873af.js.map",
-    "static/js/2.716dcadf.chunk.js": "/new_portfolio/static/js/2.716dcadf.chunk.js",
-    "static/js/2.716dcadf.chunk.js.map": "/new_portfolio/static/js/2.716dcadf.chunk.js.map",
+    "static/js/2.c284d03e.chunk.js": "/new_portfolio/static/js/2.c284d03e.chunk.js",
+    "static/js/2.c284d03e.chunk.js.map": "/new_portfolio/static/js/2.c284d03e.chunk.js.map",
     "index.html": "/new_portfolio/index.html",
-    "precache-manifest.a1514ecfc457052c4482a298a3167e3a.js": "/new_portfolio/precache-manifest.a1514ecfc457052c4482a298a3167e3a.js",
+    "precache-manifest.0fa690428eee6ef0b0af432bd9124bc5.js": "/new_portfolio/precache-manifest.0fa690428eee6ef0b0af432bd9124bc5.js",
     "service-worker.js": "/new_portfolio/service-worker.js",
     "static/css/main.6e0e62f1.chunk.css.map": "/new_portfolio/static/css/main.6e0e62f1.chunk.css.map",
-    "static/js/2.716dcadf.chunk.js.LICENSE.txt": "/new_portfolio/static/js/2.716dcadf.chunk.js.LICENSE.txt",
+    "static/js/2.c284d03e.chunk.js.LICENSE.txt": "/new_portfolio/static/js/2.c284d03e.chunk.js.LICENSE.txt",
+    "static/media/algorithmImg.png": "/new_portfolio/static/media/algorithmImg.ab8fcbe4.png",
     "static/media/encryption.jpg": "/new_portfolio/static/media/encryption.3eb240bd.jpg",
     "static/media/keypad.jpg": "/new_portfolio/static/media/keypad.e4d5be50.jpg",
+    "static/media/presentation.jpeg": "/new_portfolio/static/media/presentation.90f1c3b5.jpeg",
+    "static/media/reactStudy.png": "/new_portfolio/static/media/reactStudy.380fd57d.png",
     "static/media/responsibleweb.jpg": "/new_portfolio/static/media/responsibleweb.b9630ccf.jpg",
     "static/media/standard1.png": "/new_portfolio/static/media/standard1.cc11904c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a70873af.js",
-    "static/js/2.716dcadf.chunk.js",
+    "static/js/2.c284d03e.chunk.js",
     "static/css/main.6e0e62f1.chunk.css",
-    "static/js/main.883953f7.chunk.js"
+    "static/js/main.b51c5333.chunk.js"
   ]
 }
