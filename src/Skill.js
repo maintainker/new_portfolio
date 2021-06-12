@@ -6,7 +6,22 @@ const Skill =()=> {
     const [direct,setCap]=useState(-900);
     const [disp,setDisp] =useState('static');
     const [tit,setTit] = useState('skilltit');
+    const [bgc,setBgc] = useState('#fff');
+    let w_v=true;
+    
     document.addEventListener("scroll", function(){
+        if(window.pageYOffset>3300){
+            if(w_v === true){
+                setBgc('#0c0e14');
+            }
+            w_v =false;      
+        }else{
+            if(w_v === false){
+                setBgc('#fff');
+            }
+            w_v=true;
+        }
+        
         if(window.pageYOffset<2300){
             let dirY= window.pageYOffset-1650;
             setCap(dirY/15+'%');
@@ -20,6 +35,7 @@ const Skill =()=> {
             setTit ('skilltit');
         }
     });    
+
     const cap_style ={
         left : direct,
         display: disp,
@@ -32,7 +48,7 @@ const Skill =()=> {
         width : '100%',
         height : '100vh',
         position : 'absolute',
-        background:'white',
+        background:bgc,
         bottom: '0'
     }
     return (

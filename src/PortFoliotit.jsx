@@ -6,19 +6,17 @@ const PortTit = (y_dir)=>{
     let tit_po_X= 55+ 10*y_dir.children;
     let onoff = 1;
     
-    let y,x;
     let timer;
     document.addEventListener("scroll", function(e){ 
         if (!timer) {
             timer = setTimeout(function() {
             timer = null;
-            y= 38-window.pageYOffset/30+110;
-            x=55+10*y_dir.children-window.pageYOffset/7+471.4;
-
-            if(window.pageYOffset>3300){
+            let y= 38-window.pageYOffset/30+110;
+            if (y<-45){
+                set_tit_disp('none');
+            }else if(window.pageYOffset>3300){
 
                 if(onoff === 1){
-                    tit_po_X = x;
                     set_tit_po_y(y); 
                     set_tit_disp('block');
                     
@@ -27,7 +25,7 @@ const PortTit = (y_dir)=>{
                 onoff = 2;
             }else{
                 if(onoff===2){
-                    let tit_po_X= 55+ 10*y_dir.children;
+                    tit_po_X= 55+ 10*y_dir.children;
                     set_tit_po_y({titpo_X:55+ 10*y_dir.children,titpo_Y:38}); 
                     set_tit_disp('none');
                 }
