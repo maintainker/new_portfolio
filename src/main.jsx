@@ -7,7 +7,7 @@ const Main = () =>{
     <>
         <header>
             <h1>Front-End Developer</h1>
-            <span>genuine ideas &amp; </span>
+            <span>I have genuine ideas &amp; </span>
         </header>
     </>);
 }
